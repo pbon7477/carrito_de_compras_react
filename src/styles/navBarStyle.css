@@ -1,0 +1,17 @@
+/* NavBar.css */
+
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Cambia el color de fondo según tus preferencias */
+  z-index: 1000; /* Asegura que el NavBar esté por encima de otros contenidos */
+}
+
+.fixed-badge {
+  position: fixed;
+  top: 10px; /* Ajusta la posición vertical del badge según sea necesario */
+  right: 20px; /* Ajusta la posición horizontal del badge según sea necesario */
+  z-index: 1000; /* Asegura que el badge esté por encima de otros contenidos */
+}

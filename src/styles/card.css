@@ -1,0 +1,110 @@
+/* Estilos para la tarjeta */
+.tarjeta {
+    display: flex;
+    width:100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .tarjeta-imagen {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .tarjeta-contenido {
+    flex: 1;
+  }
+  
+  .tarjeta-titulo {
+    margin: 0;
+  }
+  
+  .tarjeta-descripcion {
+    font-size: 0.8em;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .tarjeta-precio {
+    margin: 0 ;
+    font-weight: bold;
+  }
+  
+  .boton-agregar {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .boton-agregar:hover {
+    background-color: #45a049;
+  }
+  .boton-quitar {
+    background-color: #af4c4c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .boton-quitar:hover {
+    background-color: #a04545;
+  }
+  
+  /* Estilos para el carrito */
+  .carrito {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  
+  
+  
+  
+  @media only screen and (min-width:680px){
+
+    .tarjeta {
+      display: flex;
+      width:47.5%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .truncate-text {
+      display: -webkit-box;
+      -webkit-line-clamp: 5; /* Número de líneas que deseas mostrar */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      cursor: pointer;
+    }
+    
+    .truncate-text:hover {
+      -webkit-line-clamp: unset; /* Al hacer clic, muestra todo el contenido */
+    }
+    .truncate-text-T {
+      display: -webkit-box;
+      -webkit-line-clamp: 2; /* Número de líneas que deseas mostrar */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      cursor: pointer;
+    }
+    
+    .truncate-text-T:hover {
+      -webkit-line-clamp: unset; /* Al hacer clic, muestra todo el contenido */
+    }
+
+  }
